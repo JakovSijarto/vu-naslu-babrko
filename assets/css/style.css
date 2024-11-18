@@ -64,7 +64,7 @@ body {
   font-weight: 400;
   line-height: 1.6em;
   overflow-x: hidden;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -2297,9 +2297,7 @@ kbd {
 .ak-site_branding {
   display: inline-block;
 }
-.ak-site_branding img {
-  max-height: 45px;
-}
+
 
 @media screen and (min-width: 1200px) {
   .ak-nav_list.ak-color_1 {
@@ -2679,7 +2677,11 @@ kbd {
   .header-top {
     display: none;
   }
+  .ak-main-header-right {
+    display: none;
+  }
 }
+
 @media screen and (max-width: 991px) {
   .ak-site_header .container {
     max-width: 100%;
@@ -2701,9 +2703,6 @@ kbd {
   .ak-hamburger_wrap .ak-hamburger {
     margin-right: 0;
   }
-  .ak-site_branding img {
-    max-height: 32px;
-  }
   .ak-site_header.ak-style1 .ak-btn span {
     display: none;
   }
@@ -2712,9 +2711,7 @@ kbd {
     width: 20px;
     height: 20px;
   }
-  .ak-main-header-right {
-    display: none;
-  }
+  
 }
 .nav-bar-border {
   opacity: 0.5;
@@ -3080,7 +3077,7 @@ kbd {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 325px;
+  max-height: 200px;
 }
 .service-card .card-info {
   max-width: 420px;
@@ -3098,6 +3095,17 @@ kbd {
 .service-card .card-info .card-desp {
   margin-bottom: 35px;
   font-size: 16px;
+}
+.auto-counter-section .row {
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Centers the items vertically */
+  flex-wrap: wrap; /* Ensures responsive layout on smaller screens */
+  gap: 2rem; /* Adds space between the items */
+}
+
+.ak-funfact {
+  text-align: center; /* Ensures text is centered within each item */
 }
 .service-card:hover > .card-img > img {
   transform: scale(1.2);
