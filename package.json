@@ -1,0 +1,12 @@
+{
+  "name": "car-service-website",
+  "version": "1.0.0",
+  "description": "Car Service Static Website",
+  "scripts": {
+    "build": "echo 'Static site - no build required'",
+    "dev": "echo 'Use a local server to preview'"
+  },
+  "keywords": ["static", "website"],
+  "author": "",
+  "license": "ISC"
+}
